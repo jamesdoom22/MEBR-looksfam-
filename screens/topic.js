@@ -4,7 +4,7 @@ import { StatusBar, Button, StyleSheet, Text, TouchableOpacity, View, SafeAreaVi
 
 export default function Topic({ navigation, route }) {
     const { topic, subject } = route.params;
-    //console.log("🚀 ~ file: topic.js ~ line 7 ~ Topic ~ topic, subject", topic, subject)
+    console.log("🚀 ~ file: topic.js ~ line 7 ~ Topic ~ topic, subject", topic, subject)
     useEffect(() => {
         navigation.setOptions({ title: topic ? topic : subject })
     }, [])

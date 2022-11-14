@@ -1,7 +1,6 @@
 //import { StatusBar } from "expo-status-bar";
 import { useEffect, useState } from "react";
 import { ResizeTextMode, Animated, StyleSheet, Text, TouchableOpacity, View, SafeAreaView, StatusBar, AutoSizeText, Modal, BackHandler, Alert } from "react-native";
-//import { SafeAreaView } from 'react-native-safe-area-context'
 import { dataFunc } from "../data/data_func";
 import React from 'react';
 import { useTimer } from "../android/hooks/useTimer";

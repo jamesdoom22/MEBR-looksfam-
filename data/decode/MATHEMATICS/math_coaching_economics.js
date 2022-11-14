@@ -902,7 +902,7 @@ export const math_coaching_economics = [
     {
         choices: ["goodwill value", "differential value", "market value", "marginal revenue"],
         correctAnswer: "marginal revenue",
-        question: "The amount received fro mthe sale of an additional unit of a product.",
+        question: "The amount received from the sale of an additional unit of a product.",
         topic: "NA"
     },
     {

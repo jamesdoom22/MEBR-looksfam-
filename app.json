@@ -25,7 +25,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.anonymous.LooksFam"
+      "package": "com.anonymous.LooksFam",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyBX3NMR2tiWHHGEuJowRc-BZDs1KoHQc4s",
+          "certificateHash": "A92AB604AB752BB46B6D6147272FC990FA27E084"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

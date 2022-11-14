@@ -1,9 +1,9 @@
-import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Result({ navigation, route }) {
   const { score, num_ques, time, questions, answers, answersIndex } = route.params;
+  console.log("🚀 ~ file: result.js ~ line 7 ~ Result ~ route.params", route.params)
   const [myScore, setMyScore] = useState(score)
 
   const secondsToHms = (time) => {
@@ -79,7 +79,6 @@ export default function Result({ navigation, route }) {
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
           <Text style={styles.buttonText}>Back to Home</Text>
         </TouchableOpacity>
-        <StatusBar style="auto" />
       </View>
     </View>
   );
