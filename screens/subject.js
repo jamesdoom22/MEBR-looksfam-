@@ -1,12 +1,34 @@
 
 import { useEffect, useState } from "react";
 import { StatusBar, Image, StyleSheet, Text, TouchableOpacity, View, SafeAreaView, FlatList } from "react-native";
-
+// import InstallerPackageName from 'react-native-installer-package-name';
+//import VersionCheck from 'react-native-version-check';
 
 export default function Subject({ navigation, route }) {
     const { subject } = route.params;
     const [topics, setTopics] = useState([])
     useEffect(() => {
+        // InstallerPackageName.getInstallerPackageName.then((response) => {
+        //     console.log(response);
+        // })
+        // .catch((error) => {
+        //     console.log(error);
+        // });
+
+        // VersionCheck.getCountry()
+        //     .then(country => console.log(country));          // KR
+        // console.log(VersionCheck.getPackageName());        // com.reactnative.app
+        // console.log(VersionCheck.getCurrentBuildNumber()); // 10
+        // console.log(VersionCheck.getCurrentVersion());
+        // VersionCheck.getLatestVersion({
+        //     provider: 'playStore',
+        // })
+        //     .then((response) => {
+        //         console.log(response);
+        //     })
+        //     .catch((err) => {
+        //         console.log("Here error",err);
+        //     });
         console.log(subject);
         let topic = [];
         if (subject === 'Math') {
@@ -15,6 +37,8 @@ export default function Subject({ navigation, route }) {
             topic = ['MDSP Coaching Phase 1', 'MDSP Coaching Phase 2', 'MDSP Coaching Phase 3', 'Elements Coaching', 'Problems Coaching']
         } else if (subject === 'Redbook') {
             topic = ['Algebra', 'Analytic Geometry', 'Calculus', 'Economics', 'Physics']
+        }else if (subject === 'Pipe') {
+            topic = ['Choices Only', 'Question and Answer']
         }
         setTopics(topic)
         navigation.setOptions({ title: subject })

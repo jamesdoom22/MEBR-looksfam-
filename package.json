@@ -13,18 +13,20 @@
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.1",
     "expo": "~44.0.0",
+    "expo-auth-session": "~3.5.0",
     "expo-google-app-auth": "~8.3.0",
+    "expo-random": "~12.1.1",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "expo-updates": "~0.11.7",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.64.3",
+    "react-native-installer-package-name": "^1.0.0",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
-    "react-native-web": "^0.18.9",
-    "expo-auth-session": "~3.5.0",
-    "expo-random": "~12.1.1"
+    "react-native-version-check": "^3.4.3",
+    "react-native-web": "^0.18.9"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
